@@ -17,7 +17,7 @@ public class UserController {
 
     @GetMapping("/hello")
     public String userList(Model model) throws Exception {
-        List<User> user = userListService.findUser();
+        int user = userListService.findUser();
         model.addAttribute("user", user);
         return "hello";
     }

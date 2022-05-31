@@ -14,7 +14,7 @@ public class UserListServiceImpl implements UserListService {
     @Autowired
     UserDao userDao;
     @Override
-    public List<User> findUser() throws Exception {
+    public int findUser() throws Exception {
         return userDao.selectUser();
     }
 }

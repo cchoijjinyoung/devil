@@ -4,9 +4,8 @@
 
 <mapper namespace="com.jinyoung.devil.dao.UserDao">
 
-    <select id="selectUser" resultType="String" >
-        SELECT uno,
-               name
+    <select id="selectUser" resultType="int" >
+        SELECT uno
           FROM user
     </select>
 </mapper>
