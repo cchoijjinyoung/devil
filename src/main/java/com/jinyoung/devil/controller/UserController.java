@@ -15,10 +15,20 @@ public class UserController {
     @Autowired
     private UserListService userListService;
 
+    @GetMapping("/")
+    public String test() throws Exception {
+        return "test";
+    }
     @GetMapping("/hello")
     public String userList(Model model) throws Exception {
-        int user = userListService.findUser();
+        List<User> user = userListService.findUser();
         model.addAttribute("user", user);
         return "hello";
+    }
+
+    @GetMapping("/test2")
+    public String test2() throws Exception {
+        userListService.test2();
+        return "test2";
     }
 }

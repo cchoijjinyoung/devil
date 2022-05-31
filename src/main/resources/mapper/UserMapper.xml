@@ -4,8 +4,13 @@
 
 <mapper namespace="com.jinyoung.devil.dao.UserDao">
 
-    <select id="selectUser" resultType="int" >
+    <select id="selectUser" resultType="map" >
         SELECT uno
           FROM user
+    </select>
+
+    <select id="test2" resultType="int" >
+        SELECT 1
+        FROM dual
     </select>
 </mapper>

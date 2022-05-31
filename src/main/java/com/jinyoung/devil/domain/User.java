@@ -3,7 +3,7 @@ package com.jinyoung.devil.domain;
 import java.util.Date;
 
 public class User {
-    private int no;
+    private int uno;
     private String email;
     private String nickname;
     private String name;
@@ -28,11 +28,11 @@ public class User {
     private boolean followed;
     private int notiCount;
 
-    public int getNo() {
-        return no;
+    public int getUno() {
+        return uno;
     }
-    public User setNo(int no) {
-        this.no = no;
+    public User setUno(int uno) {
+        this.uno = uno;
         return this;
     }
     public String getEmail() {

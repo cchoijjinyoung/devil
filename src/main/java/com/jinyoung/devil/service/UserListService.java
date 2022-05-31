@@ -5,6 +5,8 @@ import com.jinyoung.devil.domain.User;
 import java.util.List;
 
 public interface UserListService {
-    int findUser() throws Exception;
+    List<User> findUser() throws Exception;
+
+    int test2() throws Exception;
 
 }
